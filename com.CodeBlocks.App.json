@@ -2,7 +2,7 @@
     "app-id": "com.CodeBlocks.App",
     "runtime": "org.gnome.Platform",
     "runtime-version": "3.22",
-    "sdk": "org.gnome.Sdk"
+    "sdk": "org.gnome.Sdk",
     "command": "codeblocks",
     "finish-args": [
         "--socket=x11",
