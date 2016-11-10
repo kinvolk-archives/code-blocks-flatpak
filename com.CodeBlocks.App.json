@@ -1,0 +1,42 @@
+{
+	"app-id": "com.CodeBlocks.App",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.22",
+    "sdk": "org.gnome.Sdk",
+	"command": "codeblocks",
+	"finish-args": [
+		"--socket=x11",
+		"--share=network",
+		"--share=ipc",
+		"--device=dri",
+		"--filesystem=home"
+	],
+	"modules": [
+		{
+			"name": "CodeBlocks",
+			"no-autogen": true,
+			"sources": [
+				{
+					"type": "archive",
+					"url": "http://downloads.sourceforge.net/project/codeblocks/Sources/16.01/codeblocks_16.01.tar.gz?r=&ts=1478766241&use_mirror=heanet",
+                    "sha256": "30fb9d206df4ab3c2e2fec2451a0a7c9723bfed9a673cc9be71e881c529d5a03"
+                },
+    			{
+					"type": "file",
+					"path": "Makefile",
+					"dest-filename": "Makefile"
+				},
+				{
+					"type": "file",
+					"path": "com.CodeBlocks.App.png",
+					"dest-filename": "com.CodeBlocks.App.png"
+				},
+				{
+					"type": "file",
+					"path": "com.CodeBlocks.App.desktop",
+					"dest-filename": "com.CodeBlocks.App.desktop"
+				}
+			]
+		}
+	]
+}
