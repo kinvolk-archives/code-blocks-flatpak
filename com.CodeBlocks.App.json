@@ -24,6 +24,16 @@
     ],
     "modules": [
         {
+            "name": "xterm",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://invisible-island.net/datafiles/release/xterm.tar.gz",
+                    "sha256": "66fb2f6c35b342148f549c276b12a3aa3fb408e27ab6360ddec513e14376150b"
+                }
+            ]
+        },
+        {
             "name": "wxWidgets",
             "cxxflags": ["-std=c++0x"],
             "make-args": ["-j4"],
