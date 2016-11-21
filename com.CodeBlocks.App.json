@@ -1,5 +1,5 @@
 {
-    "app-id": "com.CodeBlocks1.App",
+    "app-id": "com.CodeBlocks.App",
     "runtime": "org.gnome.Sdk",
     "runtime-version": "3.22",
     "sdk": "org.gnome.Sdk",
@@ -24,8 +24,28 @@
     ],
     "modules": [
         {
-            "name": "xterm",
+            "name": "libXmu",
             "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.x.org/releases/individual/lib/libXmu-1.1.2.tar.gz",
+                    "sha256": "e5fd4bacef068f9509b8226017205040e38d3fba8d2de55037200e7176c13dba"
+                }
+            ]
+        },
+        {
+            "name": "libXaw",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.x.org/archive//individual/lib/libXaw-1.0.9.tar.gz",
+                    "sha256": "48bfd7b120e8b66d9dc19cedf377d3458ce8fd63502aabed256a07f920039d9a"
+                }
+            ]
+        },
+        {
+            "name": "xterm",
+            "sources":[
                 {
                     "type": "archive",
                     "url": "http://invisible-island.net/datafiles/release/xterm.tar.gz",
