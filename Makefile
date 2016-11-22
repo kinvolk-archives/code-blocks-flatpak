@@ -1,5 +1,5 @@
 all:
-    true
+	true
 install:
 	mkdir -p /app/CodeBlocks /app/bin
 	cp -ra * /app/CodeBlocks
