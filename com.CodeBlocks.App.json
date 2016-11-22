@@ -67,7 +67,13 @@
                 {
                     "type": "shell",
                     "commands": [ "autoreconf --warnings=all --verbose --install"]
-                },
+                }
+            ]
+        },
+        {
+            "name": "CodeBlocks metadata",
+            "no-autogen": true,
+            "sources": [
                 {
                     "type": "file",
                     "path": "Makefile",
@@ -82,6 +88,11 @@
                     "type": "file",
                     "path": "com.CodeBlocks.App.desktop",
                     "dest-filename": "com.CodeBlocks.App.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "com.CodeBlocks.App.appdata.xml",
+                    "dest-filename": "com.CodeBlocks.App.appdata.xml"
                 }
             ]
         }
